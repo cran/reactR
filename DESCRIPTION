@@ -1,8 +1,8 @@
 Package: reactR
 Type: Package
 Title: React Helpers
-Version: 0.1.3
-Date: 2017-10-10
+Version: 0.1.4
+Date: 2017-11-21
 Authors@R: c(
       person(
         "Facebook", "Inc"
@@ -17,24 +17,22 @@ Authors@R: c(
       )
     )
 Maintainer: Kent Russell <kent.russell@timelyportfolio.com>
-Description: Make it easy to use 'react' in R with helper
+Description: Make it easy to use 'React' in R with helper
               dependency functions, embedded 'Babel' transpiler,
-              and examples.  Please note the separate 'react'
-              BSD license <https://github.com/facebook/react/blob/master/LICENSE>
-              when using 'react' in your projects.
+              and examples.
 URL: https://github.com/timelyportfolio/reactR
 BugReports: https://github.com/timelyportfolio/reactR/issues
-License: BSD_3_clause + file LICENSE
+License: MIT + file LICENSE
 LazyData: TRUE
 Imports: htmltools
 Suggests: htmlwidgets (>= 0.6.0), rmarkdown, shiny, V8, knitr
 RoxygenNote: 6.0.1
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2017-10-12 01:28:46 UTC; Kent and Laurie
+Packaged: 2017-11-22 13:11:59 UTC; Kent and Laurie
 Author: Facebook Inc [aut, cph] (React library in lib,
     https://facebook.github.io/react; see AUTHORS for full list of
     contributors),
   Kent Russell [aut, cre] (R interface)
 Repository: CRAN
-Date/Publication: 2017-10-12 14:09:58 UTC
+Date/Publication: 2017-11-22 13:22:29 UTC
