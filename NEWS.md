@@ -1,3 +1,21 @@
+# reactR 0.4.0
+
+* Add Shiny input scaffold and functionality; [tutorial](https://react-r.github.io/reactR/articles/intro_inputs.html) and [pull 22](https://github.com/react-R/reactR/pull/22) thanks @alandipert
+
+# reactR 0.3.1
+
+* Update react and react-dom to 16.8.1
+* Add `usethis` R dependency
+* Ignore node_modules in `.Rbuildignore` and `.gitignore`
+* Set `{modules:false}` in `babel_transform` to avoid `"use strict"`; [pull 15](https://github.com/react-R/reactR/pull/15)
+* Use webpack to build `react-tools.js`; [pull 16](https://github.com/react-R/reactR/pull/16)
+* Attach component to the htmlwidget
+
+# reactR 0.3.0
+
+* Add htmlwidget scaffold and helpers (see [tutorial](https://react-r.github.io/reactR/articles/intro_htmlwidgets.html))
+* Update react and react-dom to 16.6.7
+
 # reactR 0.2.1
 
 * Update react and react-dom to 16.6.0

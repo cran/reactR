@@ -1,8 +1,8 @@
 Package: reactR
 Type: Package
 Title: React Helpers
-Version: 0.3.0
-Date: 2019-01-11
+Version: 0.4.0
+Date: 2019-04-10
 Authors@R: c(
       person(
         "Facebook", "Inc"
@@ -32,15 +32,16 @@ License: MIT + file LICENSE
 LazyData: TRUE
 Encoding: UTF-8
 Imports: htmltools
-Suggests: htmlwidgets (>= 0.6.0), rmarkdown, shiny, V8, knitr
+Suggests: htmlwidgets (>= 0.6.0), rmarkdown, shiny, V8, knitr, usethis,
+        jsonlite
 RoxygenNote: 6.1.1
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2019-01-15 13:42:11 UTC; kentr
+Packaged: 2019-04-17 12:41:07 UTC; kentr
 Author: Facebook Inc [aut, cph] (React library in lib,
     https://facebook.github.io/react; see AUTHORS for full list of
     contributors),
   Kent Russell [aut, cre] (R interface),
   Alan Dipert [aut] (R interface)
 Repository: CRAN
-Date/Publication: 2019-01-15 14:00:03 UTC
+Date/Publication: 2019-04-17 13:00:03 UTC

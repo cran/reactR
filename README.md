@@ -1,22 +1,24 @@
-reactR
-================
 
-# reactR
+# reactR <img src="vignettes/logo.svg" alt="reactR logo" width="100px" />
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/reactR)](https://cran.r-project.org/package=reactR)
 [![Travis-CI Build
 Status](https://travis-ci.org/react-R/reactR.svg?branch=master)](https://travis-ci.org/react-R/reactR)
+[![Slack
+Status](https://reactr-slackin.herokuapp.com/badge.svg)](https://reactr-slackin.herokuapp.com/)
 
 `reactR` provides a set of convenience functions for using
 [`React`](https://facebook.github.io/react) in `R` with `htmlwidget`
 constructor templates and local JavaScript dependencies. The `React`
 ecosystem is rich with components that can enhance `R` web and Shiny
 apps. `scaffoldReactWidget()` helps build `htmlwidgets` to integrate
-these `React` components as `R` `htmlwidgets`. The local dependency
-functions are modeled after the `html_dependency_*` functions from
-RStudio’s [`rmarkdown`](https://github.com/rstudio/rmarkdown) package.
+these `React` components as `R` `htmlwidgets`.
+`scaffoldReactShinyInput()` does the same for `Shiny` inputs. The local
+dependency functions are modeled after the `html_dependency_*` functions
+from RStudio’s [`rmarkdown`](https://github.com/rstudio/rmarkdown)
+package.
 
 ## Installation
 
@@ -36,13 +38,18 @@ reactR](https://react-r.github.io/reactR/articles/intro_htmlwidgets.html).
 Also, there are a variety of examples in the [react-R Github
 organization](https://github.com/react-R).
 
-## Shiny?
+## Shiny Outputs and Inputs
 
-Currently, `htmlwidgets` built with `reactR` work well in Shiny as
-outputs. In the next version we hope to have a mechanism for input in
-Shiny contexts.
+`htmlwidgets` built with `reactR` work well in Shiny as outputs. In
+version `0.4.0` Alan Dipert has added the ability to easily create
+React-based official `Shiny` inputs with helpers and scaffolds. Please
+see the
+[tutorial](https://react-r.github.io/reactR/articles/intro_inputs.html)
+for more details.
 
 ## Examples
+
+Below are examples of using `reactR` directly.
 
 ``` r
 library(reactR)

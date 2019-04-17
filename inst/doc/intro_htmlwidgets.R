@@ -5,14 +5,17 @@ knitr::opts_chunk$set(eval = FALSE)
 #  install.packages(c("shiny", "devtools", "usethis", "htmlwidgets", "reactR"))
 
 ## ------------------------------------------------------------------------
-#  # Set the current working directory to your home directory. The new widget will
-#  # be created in ~/sparklines
-#  setwd("~")
-#  # Create a directory 'sparklines' and populate it with skeletal package
-#  # If run within RStudio, this will create a new RStudio session
-#  usethis::create_package("sparklines")
-#  # Generate skeletal reactR widget code and supporting build configuration
-#  reactR::scaffoldReactWidget("sparklines", c("react-sparklines", "^1.7.0"))
+#  # Create the R package
+#  usethis::create_package("~/sparklines")
+#  # Inject the widget templating
+#  withr::with_dir(
+#    "~/sparklines",
+#    reactR::scaffoldReactWidget("sparklines", list("react-sparklines" = "^1.7.0"), edit = FALSE)
+#  )
+
+## ------------------------------------------------------------------------
+#  system("yarn install")
+#  system("yarn run webpack")
 
 ## ------------------------------------------------------------------------
 #  devtools::document()
@@ -20,9 +23,6 @@ knitr::opts_chunk$set(eval = FALSE)
 
 ## ------------------------------------------------------------------------
 #  shiny::runApp()
-
-## ----echo=FALSE----------------------------------------------------------
-#  knitr::include_graphics('./widget_app.jpg')
 
 ## ------------------------------------------------------------------------
 #  sparklines <- function(message, width = NULL, height = NULL, elementId = NULL) {
@@ -72,22 +72,30 @@ knitr::opts_chunk$set(eval = FALSE)
 #  }
 
 ## ------------------------------------------------------------------------
+#  system("yarn install")
+#  system("yarn run webpack")
+#  devtools::document()
+#  devtools::install()
+#  library(sparklines)
+#  sparklines(rnorm(10), sparklinesLine())
+
+## ------------------------------------------------------------------------
 #  library(shiny)
 #  library(sparklines)
 #  
 #  ui <- fluidPage(
-#    titlePanel("reactR HTMLWidget Example"),
-#    sparklinesOutput('myWidget')
+#    titlePanel("Sparklines library"),
+#    sliderInput("n", label = "Number of samples", min = 2, max = 1000, value = 100),
+#    sparklinesOutput("myWidget")
 #  )
 #  
 #  server <- function(input, output, session) {
-#    output$myWidget <- renderSparklines({
-#      sparklines(
-#        data = rnorm(10),
-#        sparklinesLine(color = "#56b45d"),
-#        sparklinesSpots(style = list(fill = "#56b45d"))
-#      )
-#    })
+#      output$myWidget <- renderSparklines({
+#          sparklines(
+#              rnorm(input$n),
+#              sparklinesLine()
+#          )
+#      })
 #  }
 #  
 #  shinyApp(ui, server)
