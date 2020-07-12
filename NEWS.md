@@ -1,3 +1,9 @@
+# reactR 0.4.3
+
+* Add element to Shiny input [pull 41](https://github.com/react-R/reactR/pull/41)
+
+* Upgrade npm dependencies
+
 # reactR 0.4.2
 
 * Update react to `16.12.0`
@@ -54,7 +60,7 @@
 
 * Update to react `15.5.0`
 * Update to babel `6.24.0`
-* Add [office-fabric-react](http://dev.office.com/fabric) example
+* Add [fluent-ui(fabric)](https://developer.microsoft.com/en-us/fluentui#/get-started#fluent-ui-react) example
 * Build doc site with `pkgdown`
 
 # reactR 0.1.1

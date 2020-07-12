@@ -1,10 +1,10 @@
-## ---- echo=FALSE, include=FALSE------------------------------------------
+## ---- echo=FALSE, include=FALSE-----------------------------------------------
 knitr::opts_chunk$set(eval = FALSE)
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 #  install.packages(c("shiny", "devtools", "usethis", "htmlwidgets", "reactR"))
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 #  # Create the R package
 #  usethis::create_package("~/sparklines")
 #  # Inject the widget templating
@@ -13,18 +13,18 @@ knitr::opts_chunk$set(eval = FALSE)
 #    reactR::scaffoldReactWidget("sparklines", list("react-sparklines" = "^1.7.0"), edit = FALSE)
 #  )
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 #  system("yarn install")
 #  system("yarn run webpack")
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 #  devtools::document()
 #  devtools::install(quick = TRUE)
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 #  shiny::runApp()
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 #  sparklines <- function(message, width = NULL, height = NULL, elementId = NULL) {
 #  
 #    # describe a React component to send to the browser for rendering.
@@ -41,7 +41,7 @@ knitr::opts_chunk$set(eval = FALSE)
 #    )
 #  }
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 #  sparklines <- function(data, ..., width = NULL, height = NULL) {
 #  
 #    # describe a React component to send to the browser for rendering.
@@ -60,7 +60,7 @@ knitr::opts_chunk$set(eval = FALSE)
 #    )
 #  }
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 #  #' @export
 #  sparklinesLine <- function(...) {
 #    reactR::React$SparklinesLine(...)
@@ -71,7 +71,7 @@ knitr::opts_chunk$set(eval = FALSE)
 #    reactR::React$SparklinesSpots(...)
 #  }
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 #  system("yarn install")
 #  system("yarn run webpack")
 #  devtools::document()
@@ -79,7 +79,7 @@ knitr::opts_chunk$set(eval = FALSE)
 #  library(sparklines)
 #  sparklines(rnorm(10), sparklinesLine())
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 #  library(shiny)
 #  library(sparklines)
 #  
