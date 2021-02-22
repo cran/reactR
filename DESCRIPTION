@@ -1,13 +1,13 @@
 Package: reactR
 Type: Package
 Title: React Helpers
-Version: 0.4.3
-Date: 2020-07-12
+Version: 0.4.4
+Date: 2021-02-20
 Authors@R: c(
       person(
         "Facebook", "Inc"
         , role = c("aut", "cph")
-        , comment = "React library in lib, https://facebook.github.io/react; see AUTHORS for full list of contributors"
+        , comment = "React library in lib, https://reactjs.org/; see AUTHORS for full list of contributors"
       ),
       person(
         "Michel","Weststrate",
@@ -37,18 +37,17 @@ License: MIT + file LICENSE
 LazyData: TRUE
 Encoding: UTF-8
 Imports: htmltools
-Suggests: htmlwidgets (>= 0.6.0), rmarkdown, shiny, V8, knitr, usethis,
+Suggests: htmlwidgets (>= 1.5.3), rmarkdown, shiny, V8, knitr, usethis,
         jsonlite
 RoxygenNote: 7.1.1
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2020-07-12 12:29:24 UTC; kentr
-Author: Facebook Inc [aut, cph] (React library in lib,
-    https://facebook.github.io/react; see AUTHORS for full list of
-    contributors),
+Packaged: 2021-02-21 15:11:04 UTC; kentr
+Author: Facebook Inc [aut, cph] (React library in lib, https://reactjs.org/;
+    see AUTHORS for full list of contributors),
   Michel Weststrate [aut, cph] (mobx library in lib,
     https://github.com/mobxjs),
   Kent Russell [aut, cre] (R interface),
   Alan Dipert [aut] (R interface)
 Repository: CRAN
-Date/Publication: 2020-07-12 12:50:02 UTC
+Date/Publication: 2021-02-22 14:50:06 UTC
