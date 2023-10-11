@@ -1,8 +1,8 @@
 Package: reactR
 Type: Package
 Title: React Helpers
-Version: 0.4.4
-Date: 2021-02-20
+Version: 0.5.0
+Date: 2023-10-01
 Authors@R: c(
       person(
         "Facebook", "Inc"
@@ -34,15 +34,14 @@ Description: Make it easy to use 'React' in R with 'htmlwidget' scaffolds,
 URL: https://github.com/react-R/reactR
 BugReports: https://github.com/react-R/reactR/issues
 License: MIT + file LICENSE
-LazyData: TRUE
 Encoding: UTF-8
 Imports: htmltools
 Suggests: htmlwidgets (>= 1.5.3), rmarkdown, shiny, V8, knitr, usethis,
         jsonlite
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2021-02-21 15:11:04 UTC; kentr
+Packaged: 2023-10-11 03:05:02 UTC; kentr
 Author: Facebook Inc [aut, cph] (React library in lib, https://reactjs.org/;
     see AUTHORS for full list of contributors),
   Michel Weststrate [aut, cph] (mobx library in lib,
@@ -50,4 +49,4 @@ Author: Facebook Inc [aut, cph] (React library in lib, https://reactjs.org/;
   Kent Russell [aut, cre] (R interface),
   Alan Dipert [aut] (R interface)
 Repository: CRAN
-Date/Publication: 2021-02-22 14:50:06 UTC
+Date/Publication: 2023-10-11 04:40:02 UTC
