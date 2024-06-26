@@ -12,7 +12,7 @@
 
 <meta name="author" content="Kent Russell" />
 
-<meta name="date" content="2023-10-10" />
+<meta name="date" content="2024-06-26" />
 
 <title>Intro to reactR</title>
 
@@ -640,7 +640,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <h1 class="title toc-ignore">Intro to reactR</h1>
 <h4 class="author">Kent Russell</h4>
-<h4 class="date">2023-10-10</h4>
+<h4 class="date">2024-06-26</h4>
 
 
 
@@ -667,23 +667,23 @@ element below.</p>
 
 </div>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">library</span>(reactR)</span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="fu">library</span>(htmltools)</span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="fu">attachDependencies</span>(</span>
-<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>  tags<span class="sc">$</span><span class="fu">script</span>(</span>
-<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>  <span class="st">&quot;</span></span>
-<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a><span class="st">    ReactDOM.render(</span></span>
-<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a><span class="st">      React.createElement(</span></span>
-<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a><span class="st">        &#39;h1&#39;,</span></span>
-<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a><span class="st">        null,</span></span>
-<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a><span class="st">        &#39;Powered by React&#39;</span></span>
-<span id="cb2-12"><a href="#cb2-12" tabindex="-1"></a><span class="st">      ),</span></span>
-<span id="cb2-13"><a href="#cb2-13" tabindex="-1"></a><span class="st">      document.getElementById(&#39;react-heading-here&#39;)</span></span>
-<span id="cb2-14"><a href="#cb2-14" tabindex="-1"></a><span class="st">    )</span></span>
-<span id="cb2-15"><a href="#cb2-15" tabindex="-1"></a><span class="st">  &quot;</span></span>
-<span id="cb2-16"><a href="#cb2-16" tabindex="-1"></a>  ),</span>
-<span id="cb2-17"><a href="#cb2-17" tabindex="-1"></a>  <span class="fu">html_dependency_react</span>()</span>
-<span id="cb2-18"><a href="#cb2-18" tabindex="-1"></a>)</span></code></pre></div>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="fu">library</span>(htmltools)</span></code></pre></div>
+<pre><code>## Warning: package &#39;htmltools&#39; was built under R version 4.3.2</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">attachDependencies</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>  tags<span class="sc">$</span><span class="fu">script</span>(</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>  <span class="st">&quot;</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="st">    ReactDOM.render(</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="st">      React.createElement(</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="st">        &#39;h1&#39;,</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="st">        null,</span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="st">        &#39;Powered by React&#39;</span></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="st">      ),</span></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="st">      document.getElementById(&#39;react-heading-here&#39;)</span></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a><span class="st">    )</span></span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a><span class="st">  &quot;</span></span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a>  ),</span>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a>  <span class="fu">html_dependency_react</span>()</span>
+<span id="cb4-15"><a href="#cb4-15" tabindex="-1"></a>)</span></code></pre></div>
 <script>
     ReactDOM.render(
       React.createElement(
