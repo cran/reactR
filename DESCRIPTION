@@ -1,8 +1,8 @@
 Package: reactR
 Type: Package
 Title: React Helpers
-Version: 0.6.0
-Date: 2024-06-26
+Version: 0.6.1
+Date: 2024-09-14
 Authors@R: c(
       person(
         "Facebook", "Inc"
@@ -25,6 +25,12 @@ Authors@R: c(
         , role = c("aut")
         , comment = "R interface"
         , email = "alan@rstudio.com"
+      ),
+      person(
+        "Greg", "Lin"
+        , role = c("aut")
+        , comment = "R interface"
+        , email = "glin@glin.io"
       )
     )
 Maintainer: Kent Russell <kent.russell@timelyportfolio.com>
@@ -38,15 +44,16 @@ Encoding: UTF-8
 Imports: htmltools
 Suggests: htmlwidgets (>= 1.5.3), rmarkdown, shiny, V8, knitr, usethis,
         jsonlite
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2024-06-26 15:21:44 UTC; kentr
+Packaged: 2024-09-14 13:24:57 UTC; kentr
 Author: Facebook Inc [aut, cph] (React library in lib, https://reactjs.org/;
     see AUTHORS for full list of contributors),
   Michel Weststrate [aut, cph] (mobx library in lib,
     https://github.com/mobxjs),
   Kent Russell [aut, cre] (R interface),
-  Alan Dipert [aut] (R interface)
+  Alan Dipert [aut] (R interface),
+  Greg Lin [aut] (R interface)
 Repository: CRAN
-Date/Publication: 2024-06-26 15:50:02 UTC
+Date/Publication: 2024-09-14 13:50:02 UTC
